@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    android:elevation="12dp"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_post"
+            android:layout_below="@+id/postImage"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:text="rfrrr"
+            android:textColor="@color/purple_700"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutOne"
+            android:weightSum="0.9"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/postImage"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:id="@+id/btnLike"
+                android:text="Like"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/ic_like"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:id="@+id/btnComment"
+                android:text="Comment"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/ic_comment"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:id="@+id/btnShare"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/ic_share"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="#CDDAD8"
+            android:layout_below="@+id/layoutOne"
+            android:id="@+id/viewTwo"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
